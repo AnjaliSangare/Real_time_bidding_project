@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static('uploads'));
 
 // Authentication middleware
-app.use(authenticateJWT);
+// app.use(authenticateJWT);
 
 // User routes
 app.use('/api/users', userRoutes);
